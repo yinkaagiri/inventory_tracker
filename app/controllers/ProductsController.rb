@@ -23,6 +23,4 @@ def destroy
 
 end
 
-
-
 end
