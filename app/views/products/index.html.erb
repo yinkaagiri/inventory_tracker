@@ -1,1 +1,5 @@
 <h3>Products Index</h3>
+  <%= table_for @products do -%>
+  <% columns , :vendor_id, :name, :description, :inventory, :price  %>
+<% end %>
+</ul>

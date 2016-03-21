@@ -1,1 +1,11 @@
 <h2>Show Page</h2>
+
+<%= image_tag @company.logo_url, class:"company-logo"%>
+
+<ul>
+  <% @cpmpanies.products.each do |product| %>
+    <li>
+      <%= product.name, prodcut.description, product.quantity, product.price %>
+    </li>
+  <% end %>
+</ul>

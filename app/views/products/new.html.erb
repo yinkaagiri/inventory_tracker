@@ -1,0 +1,20 @@
+<%= form_for [@company, @product] do |f| %>
+
+<%= f.label :vendor_id %>
+<%= f.text_field :vendor_id %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :inventory %>
+  <%= f.text_field :inventory %>
+
+
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+
+  <%= f.submit %>
+<% end %>
