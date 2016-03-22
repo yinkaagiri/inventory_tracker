@@ -1,13 +1,13 @@
-  <h2>Companies</h2>
-  <div>
+<h2>Companies</h2>
+<div>
   <ul>
     <% @companies.each do |company| %>
 
-    <div class "comapny_list">
+    <div class "company_list">
       <li>
-        <%= link_to company.name, company %>
+        <%= link_to company.name, company_path(company) %>
       </li>
-    <% end %>
-  </div>
+      <% end %>
+    </div>
   </ul>
   <div>

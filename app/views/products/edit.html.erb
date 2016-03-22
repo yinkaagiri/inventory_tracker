@@ -2,25 +2,29 @@
 
 <div class "container">
 <%= form_for @product do |f| %>
-
+<div class="form_field">
 <%= f.label :vendor_id %>
-<%= f.text_field :vendor_id %>
-
+<%= f.text_field :vendor_id %><
+</div>
+<div class="form_field">
   <%= f.label :name %>
   <%= f.text_field :name %>
-
+</div>
+<div class="form_field">
   <%= f.label :description %>
   <%= f.text_field :description %>
-
+</div>
+<div class="form_field">
   <%= f.label :inventory %>
   <%= f.text_field :inventory %>
-
-
+</div>
+<div class="form_field">
   <%= f.label :price %>
   <%= f.text_field :price %>
-
+</div>
+<div class="form_action">
   <%= f.submit %>
 <% end %>
-
+</div>
 <%= link_to "Delete!", @product, method: :delete, class: "delete" %>
 </div>
