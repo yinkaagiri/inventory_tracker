@@ -1,19 +1,19 @@
 <h2><%=@company.name%> <%= link_to("(edit)", edit_company_path(@company))%></h2>
 <div class "container">
-<div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
-</div>
+  <div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
+  </div>
 
-<h3>Songs <%= link_to("(+)", new_company_product_path(@company))%>
-</h3>
+  <h3>Products <%= link_to("(+)", new_company_product_path(@company))%>
+  </h3>
 
 
-<div class ="product_info">
-  <ul>
-  <% @cpmpanies.products.each do |product| %>
-    <li>
-      <%= product.name, prodcut.description, product.quantity, product.price %>
-    </li>
-  <% end %>
-</ul>
-</div>
+  <div class ="product_info">
+    <ul>
+      <% @cpmpanies.products.each do |product| %>
+      <li>
+        <%= product.name %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
 </div>

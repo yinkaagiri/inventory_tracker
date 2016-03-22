@@ -10,6 +10,8 @@ class CompaniesController < ApplicationController
 
   def create
     @company = Company.create!(company_params)
+    redirect_to (company_path(@company))
+
   end
 
   def show
@@ -19,4 +21,10 @@ class CompaniesController < ApplicationController
   def edit
     @company = Company.find(params[:id])
   end
+
+  private
+  def company_params
+    params.require(:company).permit(:name, :category, :location, :logo_url)
+  end
+
 end

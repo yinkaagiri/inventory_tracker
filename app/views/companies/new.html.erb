@@ -1,25 +1,25 @@
 <h2>New Company</h2>
 
-<div>
+<div class="container">
   <%= form_for @company do |f| %>
-<p>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</p>
-<p>
-  <%= f.label :category %>
-  <%= f.text_field :category %>
-</p>
-<p>
-  <%= f.label :location %>
-  <%= f.text_field :location %>
-</p>
-<p>
-  <%= f.label :logo_url %>
-  <%= f.text_field :logo_url %>
-</p>
-<p>
-  <%= f.submit %>
-</p>
-  <% end %>
-</div>
+  <div class="form_field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <div class="form_field">
+      <%= f.label :category %>
+      <%= f.text_field :category %>
+    </div>
+    <div class="form_field">
+      <%= f.label :location %>
+      <%= f.text_field :location %>
+    </div>
+    <div class="form_field">
+      <%= f.label :logo_url %>
+      <%= f.text_field :logo_url %>
+    </div>
+    <div class="form_action">
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>

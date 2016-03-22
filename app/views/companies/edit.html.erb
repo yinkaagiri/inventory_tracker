@@ -1,14 +1,14 @@
 <h2>Edit Company</h2>
 
 <div>
-<%= form_for @company do |f| %>
+  <%= form_for @company do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
 
   <%= f.label :category %>
   <%= f.text_field :category %>
-
+  
   <%= f.label :location %>
   <%= f.text_field :location %>
 
@@ -16,8 +16,8 @@
   <%= f.text_field :logo_url %>
 
   <%= f.submit %>
-<% end %>
+  <% end %>
 
-<%= link_to "Delete", @company, method: :delete, class: "delete" %>
+  <%= link_to "Delete", @company, method: :delete, class: "delete" %>
 
 </div>
