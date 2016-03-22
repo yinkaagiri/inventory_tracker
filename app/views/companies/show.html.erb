@@ -1,11 +1,18 @@
-<h2>Show Page</h2>
+<h2><%=@company.name%> <%= link_to("(edit)", edit_company_path(@company))%></h2>
 
-<%= image_tag @company.logo_url, class:"company-logo"%>
+<div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
+</div>
 
-<ul>
+<h3>Songs <%= link_to("(+)", new_company_product_path(@company))%>
+</h3>
+
+
+<div class ="product_info">
+  <ul>
   <% @cpmpanies.products.each do |product| %>
     <li>
       <%= product.name, prodcut.description, product.quantity, product.price %>
     </li>
   <% end %>
 </ul>
+</div>

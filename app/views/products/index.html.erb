@@ -1,5 +1,7 @@
 <h3>Products Index</h3>
-  <%= table_for @products do -%>
+  <div class="productt_table">
+    <%= table_for @products do -%>
   <% columns , :vendor_id, :name, :description, :inventory, :price  %>
 <% end %>
 </ul>
+</div>
