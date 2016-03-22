@@ -1,6 +1,7 @@
 <h2>New Company</h2>
 
-<%= form_for @company do |f| %>
+<div>
+  <%= form_for @company do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -15,4 +16,5 @@
   <%= f.text_field :logo_url %>
 
   <%= f.submit %>
-<% end %>
+  <% end %>
+</div>

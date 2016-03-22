@@ -1,5 +1,6 @@
 <h2>Edit product</h2>
 
+<div class "container">
 <%= form_for @product do |f| %>
 
 <%= f.label :vendor_id %>
@@ -22,3 +23,4 @@
 <% end %>
 
 <%= link_to "Delete!", @product, method: :delete, class: "delete" %>
+</div>

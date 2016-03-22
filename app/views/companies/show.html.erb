@@ -1,5 +1,5 @@
 <h2><%=@company.name%> <%= link_to("(edit)", edit_company_path(@company))%></h2>
-
+<div class "container">
 <div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
 </div>
 
@@ -15,4 +15,5 @@
     </li>
   <% end %>
 </ul>
+</div>
 </div>

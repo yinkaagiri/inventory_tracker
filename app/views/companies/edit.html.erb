@@ -1,4 +1,6 @@
 <h2>Edit Company</h2>
+
+<div>
 <%= form_for @company do |f| %>
 
   <%= f.label :name %>
@@ -17,3 +19,5 @@
 <% end %>
 
 <%= link_to "Delete", @company, method: :delete, class: "delete" %>
+
+</div>
