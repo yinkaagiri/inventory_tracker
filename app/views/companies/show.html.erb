@@ -2,14 +2,9 @@
 <div class "container">
   <div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
   </div>
-
-  <h3>Products <%= link_to("(+)", new_company_product_path(@company))%>
-  </h3>
-
-
   <div class ="product_info">
-    
       <%= link_to "Products", company_products_path(@company) %>
+    </div>
 
-  </div>
+      <%= link_to("add products", new_company_product_path(@company))%>
 </div>

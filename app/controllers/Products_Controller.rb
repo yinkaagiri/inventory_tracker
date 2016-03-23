@@ -11,11 +11,16 @@ end
 
 def new
   @company = Company.find(params[:company_id])
+@product = Product.new
+end
+def create
+  @company = Company.find(params[:company_id])
   @product = @company.products.create!(product_params)
+  redirect_to company_products_path
 end
 
 def edit
-  @product.find(params[:id])
+  @product = Product.find(params[:id])
 end
 
 def destroy

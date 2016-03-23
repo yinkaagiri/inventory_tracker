@@ -5,6 +5,6 @@
     <%= table_for @products do -%>
   <% columns :name, :description, :inventory, :vendor_id, :price  %>
 <% end %>
-
+<%= link_to "add products", new_company_product_path %>
 
 </div>
