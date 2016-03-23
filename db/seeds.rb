@@ -5,5 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-INSERT INTO companies (name, category, location, logo_url)
-VALUES ("Tazz", "Restaurant", "398 Washington Terrace", "http://dummyimage.com/237x186.jpg/ff4444/ffffff");

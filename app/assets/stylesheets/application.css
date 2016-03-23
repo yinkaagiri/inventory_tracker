@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+.product_table, th, td{
+   border: 1px solid black;
+}
+.product_table td,.product_table th{
+  width: 20%;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+h3{
+  font-size: 25px;
+}
+
+h2{
+  font-size: 30px;
+}
+.even {
+  background-color: lightblue;
+}
+/*body {
+  background-color: lightblue;
+}*/

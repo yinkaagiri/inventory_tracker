@@ -1,10 +1,13 @@
-<h2><%=@company.name%></h2>
+<link rel='stylesheet' type='text/css' href='/assets/stylesheets/application.css'>
+<h2><%= link_to @company.name, company_path(@company)%></h2>
+<div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
+</div>
 
 <h3>Products</h3>
   <div class="product_table">
-    <%= table_for @products do -%>
+    <%= table_for @products , :html => {
+  :class => "table table-hover"} do -%>
   <% columns :name, :description, :inventory, :vendor_id, :price  %>
 <% end %>
-<%= link_to "add products", new_company_product_path %>
-
 </div>
+<%= link_to "add products", new_company_product_path %>

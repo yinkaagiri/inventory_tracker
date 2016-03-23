@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
 
 def index
   @company = Company.find(params[:company_id])
-  @products = Product.all
+  @products = @company.products
 end
 
 def show

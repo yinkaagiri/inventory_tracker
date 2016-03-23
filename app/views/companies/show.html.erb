@@ -1,10 +1,17 @@
+
+<p><%=link_to "all companies", @companies %></p>
 <h2><%=@company.name%> <%= link_to("(edit)", edit_company_path(@company))%></h2>
 <div class "container">
   <div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
   </div>
   <div class ="product_info">
       <%= link_to "Products", company_products_path(@company) %>
-    </div>
-
-      <%= link_to("add products", new_company_product_path(@company))%>
+  </div>
+  <ul>
+  <% @company.products.each do |product| %>
+    <li>
+      <%= link_to"#{product.name}", edit_company_product_path(@company, product)%>
+    </li>
+  <% end %>
+</ul>
 </div>
