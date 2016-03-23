@@ -1,7 +1,10 @@
+<h2><%=@company.name%></h2>
+
 <h3>Products</h3>
   <div class="product_table">
     <%= table_for @products do -%>
-  <% columns , :vendor_id, :name, :description, :inventory, :price  %>
+  <% columns :name, :description, :inventory, :vendor_id, :price  %>
 <% end %>
-</ul>
+
+
 </div>

@@ -8,12 +8,8 @@
 
 
   <div class ="product_info">
-    <ul>
-      <% @cpmpanies.products.each do |product| %>
-      <li>
-        <%= product.name %>
-      </li>
-      <% end %>
-    </ul>
+    
+      <%= link_to "Products", company_products_path(@company) %>
+
   </div>
 </div>

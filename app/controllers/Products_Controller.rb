@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
 def index
+  @company = Company.find(params[:company_id])
   @products = Product.all
 end
 
