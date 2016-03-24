@@ -1,25 +1,16 @@
-
-<p><%=link_to "all companies", @companies %></p>
 <div class "">
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <%=@company.name%>
-      </a>
-    </div>
-  </div>
-</nav>
-<%= link_to("(edit)", edit_company_path(@company))%>
+  <h2><%= link_to @company.name, edit_company_path(@company)%></h2>
   <div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
   </div>
   <div class ="product_info">
-      <%= link_to "Products", company_products_path(@company) %>
+    Products Inventory Summary
+         <%= link_to "Products Details", company_products_path(@company) %>
   </div>
-  <ul>
+    <ul class="list-group">
   <% @company.products.each do |product| %>
-    <li>
-      <%= link_to"#{product.name}", edit_company_product_path(@company, product)%>
+    <li class="list-group-item">
+      <%= link_to"#{product.name}", edit_company_product_path(@company, product)%> <div> </div>
+      <%= link_to "#{product.inventory}", edit_company_product_path(@company, product)%>
     </li>
   <% end %>
 </ul>

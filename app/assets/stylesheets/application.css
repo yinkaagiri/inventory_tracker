@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-.product_table, th, td{
+/*.product_table, th, td{
    border: 1px solid black;
 }
 .product_table td,.product_table th{
@@ -22,7 +22,7 @@
 table{
   width: 100%;
   border-collapse: collapse;
-}
+}*/
 h3{
   font-size: 25px;
 }
@@ -35,4 +35,8 @@ h2{
 }
 body {
   padding-top: 70px;
+}
+.home{
+  text-align: center;
+  background-color: blue;
 }

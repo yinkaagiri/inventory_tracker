@@ -6,21 +6,31 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+4...
 
 * System dependencies
+I added the following gems
+gem "devise"
+gem "table_for_collection"
 
 * Configuration
+run bundle install to install gems
 
 * Database creation
+I used psgsql and some migrations are pgsql-specific
 
 * Database initialization
+rake db:drop
+rake db:create
+rake db:migrate
+I did not include any seed file
 
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
+Deployed on Heroku using git 
 * ...
 
 

@@ -1,3 +1,9 @@
+<% if !current_user %>
+<div class "home">
+<h1>Welcome !</h1>
+</div>
+
+<% elsif current_user %>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -20,3 +26,4 @@
   </ul>
   <%=link_to "add company", new_company_path %>
   <div>
+    <% end %>
