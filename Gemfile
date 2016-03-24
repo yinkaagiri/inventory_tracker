@@ -45,5 +45,7 @@ group :development do
   gem 'spring'
 
   gem 'table_for_collection'
-  
+
+  gem 'devise'
+
 end

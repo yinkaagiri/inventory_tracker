@@ -1,10 +1,8 @@
-<h2>Edit product</h2>
-
-<div class "">
+<div class "form">
 <%= form_for @product do |f| %>
 <div class="form_field">
-<%= f.label :vendor_name %>
-<%= f.text_field :vendor %>
+<%= f.label :vendor_id %>
+<%= f.text_field :vendor_id %>
 </div>
 <div class="form_field">
   <%= f.label :name %>
@@ -25,6 +23,4 @@
 <div class="form_action">
   <%= f.submit %>
 <% end %>
-</div>
-<%= link_to "Delete!", @product, method: :delete, class: "delete" %>
 </div>

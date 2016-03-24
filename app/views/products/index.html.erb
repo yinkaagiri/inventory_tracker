@@ -7,7 +7,7 @@
   <div class="product_table">
     <%= table_for @products , :html => {
   :class => "table table-hover"} do -%>
-  <% columns :name, :description, :inventory, :vendor_id, :price  %>
+  <% columns :name, :description, :inventory, :vendor, :price  %>
 <% end %>
 </div>
 <%= link_to "add products", new_company_product_path %>
