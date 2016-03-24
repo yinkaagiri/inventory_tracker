@@ -1,5 +1,12 @@
-<link rel='stylesheet' type='text/css' href='/assets/stylesheets/application.css'>
-<h2>Companies</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        Companies
+      </a>
+    </div>
+  </div>
+</nav>
 <div>
   <ul>
     <% @companies.each do |company| %>
@@ -11,4 +18,5 @@
       <% end %>
     </div>
   </ul>
+  <%=link_to "add company", new_company_path %>
   <div>

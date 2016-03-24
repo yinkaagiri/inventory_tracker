@@ -1,7 +1,16 @@
 
 <p><%=link_to "all companies", @companies %></p>
-<h2><%=@company.name%> <%= link_to("(edit)", edit_company_path(@company))%></h2>
-<div class "container">
+<div class "">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <%=@company.name%>
+      </a>
+    </div>
+  </div>
+</nav>
+<%= link_to("(edit)", edit_company_path(@company))%>
   <div class="logo" ><%= image_tag @company.logo_url, class:"company-logo"%>
   </div>
   <div class ="product_info">

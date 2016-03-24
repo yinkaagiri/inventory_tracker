@@ -22,6 +22,20 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
   end
 
+  def update
+    @company = Company.find(params[:id])
+    @company.update(company_params)
+
+    redirect_to @company
+  end
+
+  def destroy
+    @company = Company.find(params[:id])
+    @company.destroy
+    redirect_to companies_path
+  end
+
+
   private
   def company_params
     params.require(:company).permit(:name, :category, :location, :logo_url)

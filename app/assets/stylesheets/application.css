@@ -33,6 +33,6 @@ h2{
 .even {
   background-color: lightblue;
 }
-/*body {
-  background-color: lightblue;
-}*/
+body {
+  padding-top: 70px;
+}

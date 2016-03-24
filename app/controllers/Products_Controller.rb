@@ -11,8 +11,9 @@ end
 
 def new
   @company = Company.find(params[:company_id])
-@product = Product.new
+  @product = Product.new
 end
+
 def create
   @company = Company.find(params[:company_id])
   @product = @company.products.create!(product_params)
@@ -30,7 +31,7 @@ end
 
 private
 def product_params
-  params.require(:product).permit(:name, :description, :price, :vendor_id)
+  params.require(:product).permit(:name, :description, :price, :inventory, :vendor_id)
 end
 
 end
