@@ -9,7 +9,7 @@ class CompaniesController < ApplicationController
   end
 
   def create
-    @company = Company.create!(company_params)
+    @company = Company.create!(company_params.merge(user: current_user))
     redirect_to (company_path(@company))
 
   end
